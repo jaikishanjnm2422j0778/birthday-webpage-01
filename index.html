@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="A birthday surprise for the girl I love, across every mile between us.">
+<title>Happy 20th Birthday, My Love</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="flowers-bg" id="flowersBg" aria-hidden="true"></div>
+
+    <!-- Lock screen: change PASSWORD below to whatever you like before sending -->
+    <div class="lock-screen" id="lockScreen">
+        <div class="lock-card">
+            <span class="lock-icon" aria-hidden="true">🔒💙</span>
+            <h2>This page is just for you</h2>
+            <p>Enter our password to open your birthday surprise.</p>
+            <input type="password" id="passwordInput" placeholder="Password" autocomplete="off">
+            <p class="lock-error" id="lockError">Not quite — try again, love.</p>
+            <button class="button lock-submit" type="button" id="unlockButton">Unlock my surprise 🔓</button>
+            <p class="lock-hint">Who do I love the most in this world? ❤️♾️</p>
+        </div>
+    </div>
+
+    <main class="page locked" id="mainPage">
+        <!-- ===== LANDING PAGE (Page 1) ===== -->
+        <div class="landing-page" id="landingPage">
+        <section class="opening-hero" id="openingHero">
+            <p class="opening-eyebrow">"For the girl who makes my world a little more beautiful ❤️"</p>
+            <p class="opening-sub">This isn't just a website&hellip; it's a little piece of my heart, made just for you.</p>
+            <div class="opening-photo">
+                <img src="assets/images/two-hands-forming-a-heart-against-a-sunl.jpg" alt="Two hands forming a heart against a sunlit sky, with the words Love knows no distance">
+                <span class="opening-caption">Love knows no distance. ♥</span>
+            </div>
+            <button class="button opening-button" id="startStoryButton" type="button">✨ Start Our Story</button>
+        </section>
+        </div>
+        <!-- ===== END LANDING PAGE ===== -->
+
+        <!-- ===== MAIN CONTENT PAGE (Page 2+) ===== -->
+        <div class="main-content" id="mainContent">
+
+        <section class="hero" id="heroSection">
+            <div class="hero-copy">
+                <p class="eyebrow">A little celebration for you</p>
+                <h1>Happy Birthday, <span>my Sweetheart.</span></h1>
+                <p class="intro">To the sweetest girl in my world: you make ordinary moments feel magical, and I hope today gives you back all the happiness you bring to me. We haven't even met in person yet, but you already feel like home to me — and I promise that day is coming.</p>
+                <p class="miles">📍 far apart, never far in heart</p>
+                <div class="button-row">
+                    <button class="button" id="surpriseButton" type="button">Open your surprise 💌</button>
+                    <button class="button secondary" id="musicButton" type="button">Pause our song ⏸️</button>
+                    <label class="button secondary" for="songPicker">Choose a song 🎶</label>
+                    <input class="song-picker" id="songPicker" type="file" accept="audio/*">
+                </div>
+                <audio id="loveSong" loop preload="auto">
+                    <source src="assets/audio/love-song.mp3" type="audio/mpeg">
+                </audio>
+                <p class="song-status" id="songStatus">Our song will play automatically once you unlock the page.</p>
+                <p class="note" id="surpriseNote">You are my favorite person, my happiest thought, and the most beautiful part of my life. I cannot wait to close this distance, finally hold your hand, and make many more memories with you. Happy 20th birthday — I love you endlessly. 💙</p>
+            </div>
+            <div class="hero-art">
+                <span class="floating-heart heart-one" aria-hidden="true">♥</span>
+                <span class="floating-heart heart-two" aria-hidden="true">♥</span>
+                <span class="floating-heart heart-three" aria-hidden="true">♥</span>
+                <div class="photo-ring">
+                    <img src="assets/images/thank-you-for-being-in-my-life.jpg" alt="Thank you for being in my life">
+                    <span class="photo-fallback" hidden>♥</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="wishes" aria-labelledby="wishes-title">
+            <h2 id="wishes-title">My wishes for you</h2>
+            <div class="cards">
+                <article class="card">
+                    <span class="icon" aria-hidden="true">✨</span>
+                    <h3>Endless happiness</h3>
+                    <p>May every day bring you a new reason to smile.</p>
+                </article>
+                <article class="card">
+                    <span class="icon" aria-hidden="true">🌼</span>
+                    <h3>Beautiful dreams</h3>
+                    <p>May everything you wish for find its way to you.</p>
+                </article>
+                <article class="card">
+                    <span class="icon" aria-hidden="true">💙</span>
+                    <h3>All my love</h3>
+                    <p>Today and always, you will have my whole heart.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="gallery" aria-labelledby="gallery-title">
+            <div class="distance-head">
+                <h2 id="gallery-title">Our little moments</h2>
+                <p>A few of my favorite daydreams about us — twelve little scenes I can't wait to make real.</p>
+            </div>
+            <div class="gallery-grid">
+                <figure><img src="assets/images/my-happy-place.jpg" alt="My happy place" loading="lazy"></figure>
+                <figure><img src="assets/images/you-make-me-smile.jpg" alt="You make me smile" loading="lazy"></figure>
+                <figure><img src="assets/images/same-goals-same-dreams.jpg" alt="Same goals, same dreams" loading="lazy"></figure>
+                <figure><img src="assets/images/same-sky-same-dreams.jpg" alt="Same sky, same dreams" loading="lazy"></figure>
+                <figure><img src="assets/images/good-food-happier-us.jpg" alt="Good food, happier us" loading="lazy"></figure>
+                <figure><img src="assets/images/sleep-together-stay-together.jpg" alt="Sleep together, stay together" loading="lazy"></figure>
+                <figure><img src="assets/images/small-things-big-love.jpg" alt="Small things, big love" loading="lazy"></figure>
+                <figure><img src="assets/images/you-are-special.jpg" alt="You are special" loading="lazy"></figure>
+                <figure><img src="assets/images/with-you-every-weather-feels-better.jpg" alt="With you, every weather feels better" loading="lazy"></figure>
+                <figure><img src="assets/images/you-me-always.jpg" alt="You, me, always" loading="lazy"></figure>
+                <figure><img src="assets/images/study-grow-succeed-together.jpg" alt="Study, grow, succeed together" loading="lazy"></figure>
+                <figure><img src="assets/images/thank-you-for-being-in-my-life-2.jpg" alt="Thank you for being in my life" loading="lazy"></figure>
+            </div>
+        </section>
+
+        <section class="distance" aria-labelledby="distance-title">
+            <div class="distance-map" aria-hidden="true">
+                <span class="distance-pin pin-you">You</span>
+                <svg class="distance-path" viewBox="0 0 600 90" preserveAspectRatio="none">
+                    <path class="distance-path-line" d="M20,70 C160,10 260,90 300,45 C340,0 440,80 580,20" fill="none" stroke="url(#pathGrad)" stroke-width="3" stroke-dasharray="7 9" stroke-linecap="round"/>
+                    <defs>
+                        <linearGradient id="pathGrad" x1="0" y1="0" x2="1" y2="0">
+                            <stop offset="0" stop-color="#2d6cdf"/>
+                            <stop offset="1" stop-color="#7b8cf0"/>
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <span class="distance-plane">✈️</span>
+                <span class="distance-pin pin-me">Me</span>
+            </div>
+            <div class="distance-head">
+                <h2 id="distance-title">The miles between us</h2>
+                <p>A few little truths I keep close on the days you feel far away.</p>
+            </div>
+            <div class="quote-grid">
+                <div class="quote-card reveal">
+                    Distance is just a test to see how far love can travel, and ours has already gone the whole way.
+                    <span>— for every mile between us</span>
+                </div>
+                <div class="quote-card reveal">
+                    I don't need you next to me to feel close to you. Every message, every call, brings you right back beside me.
+                    <span>— on missing you</span>
+                </div>
+                <div class="quote-card reveal">
+                    Someday soon there will be no more time zones, no more goodbyes at the end of a call — just us, in the same room, for the very first time.
+                    <span>— on the future</span>
+                </div>
+                <div class="quote-card reveal">
+                    Loving you from far away has taught me that home isn't a place. It's you, wherever you are.
+                    <span>— on home</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="together">
+            <h2>Until we meet 🫂</h2>
+            <p>We haven't met yet, but every day brings us closer. Twenty years old today, and already the most important person in a life I can't wait to share with you — in person, soon.</p>
+        </section>
+
+        <section class="final-surprise">
+            <div class="final-card">
+                <h3 class="final-title">Before you leave…</h3>
+                <p class="final-text">If I could keep one thing forever,<br>I'd keep the memories we've made.</p>
+                <p class="final-highlight">You + Me + A thousand more memories ❤️</p>
+                <p class="final-signature">With love,<br>Kishan ❤️</p>
+                <div class="heart-tap-container">
+                    <button class="heart-tap" id="finalHeart">❤️</button>
+                    <p class="tap-hint" id="tapHint">Tap the heart ❤️</p>
+                    <p class="final-message hidden" id="finalMessage">I love you so much. Thank you for being in my life. Happy Birthday! 🎂✨</p>
+                    <div class="final-image-wrap" id="finalImageWrap">
+                        <img class="final-image" src="assets/images/final-birthday.jpg" alt="Happy Birthday to my Thangookutty — yellow flowers held in hand on a sunset road">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>Made with love, just for you — across every mile ♡</footer>
+        </div>
+        <!-- ===== END MAIN CONTENT PAGE ===== -->
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
